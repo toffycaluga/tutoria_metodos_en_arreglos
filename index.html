@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Personal</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+    <h1>Mi biblioteca personal</h1>
+    <div class="container">
+        <div class="card" id="form-card">
+            <h2>Agregar Libro</h2>
+            <form id="book-form">
+                <input type="text" id="title" placeholder="Título del libro" required>
+                <input type="text" id="author" placeholder="Autor del libro" required>
+                <button type="submit">Agregar Libro</button>
+            </form>
+            <div id="stats">
+                <p>Total de Libros: <span id="total-books">0</span></p>
+                <p>Libros Leídos: <span id="read-books">0</span></p>
+                <p>Libros pendientes: <span id="pending-books">0</span></p>
+            </div>
+        </div>
+        <div class="card" id="list-card">
+            <h2>Lista de Libros</h2>
+            <ul id="book-list">
+                <!-- Los libros se agregarán aquí dinámicamente -->
+            </ul>
+        </div>
+    </div>
+    <script src="./assets/js/index3.js"></script>
+</body>
+
+</html>
